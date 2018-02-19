@@ -19,6 +19,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.el-container {
+  display: block;
+}
+
 .el-header, .el-footer {
   background-color: var(--main-color);
 }
