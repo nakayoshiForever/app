@@ -1,7 +1,7 @@
 <template lang="pug">
   .el-container
     .el-header 
-      .el-header-logo Purapany
+      .el-header-logo ふうふの地雷探索機
     .el-main
       slot(name="main")
     .el-footer Footer
