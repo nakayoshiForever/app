@@ -7,11 +7,13 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "mock": "json-server ./data/db.json"
   },
   "dependencies": {
     "element-ui": "^2.1.0",
     "jest": "^22.0.4",
+    "json-server": "^0.12.1",
     "node-sass": "^4.7.2",
     "pug": "^2.0.0-rc.4",
     "pug-loader": "^2.3.0",
