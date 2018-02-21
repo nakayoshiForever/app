@@ -1,43 +1,36 @@
 <template lang="pug">
   layout
     .word(slot="main")
-      .word-header {{date}} のおこ！
-      .word-lists
-        .word-list(v-for="word in words")
-          el-checkbox(v-model="wordAnswer[word.id]" :label="word.word" border)
+      component(:is="wordComp" :data="data")
         
 </template>
 
 <script>
 import Layout from '@/components/layout/default'
+import wordSelect from '@/components/modules/wordSelect'
 export default {
   name: 'wordCheck',
   data () {
     return {
-      date: '2018/10/13 11:11',
-      words: [
-        {
-          id: 1,
-          word: 'きらい'
-        },
-        {
-          id: 2,
-          word: 'むかつく'
-        },
-        {
-          id: 3,
-          word: 'かめかめ'
-        },
-      ],
+      data: {
+        datetime: '2018/10/13 11:11',
+        type: 'おこ',
+        words: ['きらい','むかつく','カメカメ'],
+      },
       wordAnswer: {
         1: true,
         2: false,
         3: false,
-      }
+      },
+      wordComp: 'wordSelect'
     }
   },
+  mounted: {
+    
+  },
   components: {
-    Layout
+    Layout,
+    wordSelect
   }
 }
 </script>

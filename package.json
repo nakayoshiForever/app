@@ -11,6 +11,7 @@
     "mock": "json-server ./data/db.json"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "element-ui": "^2.1.0",
     "jest": "^22.0.4",
     "json-server": "^0.12.1",
