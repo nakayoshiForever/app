@@ -43,6 +43,7 @@ export default {
 .el-main {
   background-color: var(--contens-color);
   color: #333;
+  padding: 0;
 }
 
 h1, h2 {

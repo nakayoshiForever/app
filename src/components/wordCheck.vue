@@ -2,12 +2,12 @@
   layout
     .word(slot="main")
       component(:is="wordComp" :data="data")
-        
 </template>
 
 <script>
 import Layout from '@/components/layout/default'
 import wordSelect from '@/components/modules/wordSelect'
+import wordNone from '@/components/modules/wordNone'
 export default {
   name: 'wordCheck',
   data () {
@@ -25,12 +25,13 @@ export default {
       wordComp: 'wordSelect'
     }
   },
-  mounted: {
+  mounted () {
     
   },
   components: {
     Layout,
-    wordSelect
+    wordSelect,
+    wordNone
   }
 }
 </script>
