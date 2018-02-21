@@ -4,7 +4,6 @@
       .el-header-logo ふうふの地雷探索機
     .el-main
       slot(name="main")
-    .el-footer Footer
 </template>
 
 <script>

@@ -16,10 +16,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    test: '1',
-    images: {
-      
-    }
+    data: {},
+    wordAnswer: [],
+    wordComp: 'loading',
+    id: 1
   },
   getters: {
     test (state) {
@@ -29,7 +29,13 @@ export default new Vuex.Store({
   mutations: {
   },
   actions: {
-    
+    getAPI () {
+      axios.get('/')
+        .then(res => {
+          console.log(res.data)
+        })
+        .catch(() => {})
+    }
   },
   modules: {
   }

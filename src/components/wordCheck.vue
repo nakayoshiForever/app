@@ -8,6 +8,8 @@
 import Layout from '@/components/layout/default'
 import wordSelect from '@/components/modules/wordSelect'
 import wordNone from '@/components/modules/wordNone'
+import loading from '@/components/modules/loading'
+import store from '@/store/index'
 export default {
   name: 'wordCheck',
   data () {
@@ -22,16 +24,17 @@ export default {
         2: false,
         3: false,
       },
-      wordComp: 'wordSelect'
+      wordComp: 'loading'
     }
   },
   mounted () {
-    
+    this.$store.dispatch('getAPI')
   },
   components: {
     Layout,
     wordSelect,
-    wordNone
+    wordNone,
+    loading
   }
 }
 </script>
