@@ -55,8 +55,6 @@ export default new Vuex.Store({
     addAnswer: (state, answer) => {state.wordAnswers.push(answer)},
     updateAnswer: (state, payload) => {
       let answer = state.wordAnswers.find(answer => answer.index === payload.index)
-      console.log(answer)
-      console.log(payload)
       answer.value = payload.answer
     }
   },
