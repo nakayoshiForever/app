@@ -10,22 +10,18 @@ import wordSelect from '@/components/modules/wordSelect'
 import wordNone from '@/components/modules/wordNone'
 import loading from '@/components/modules/loading'
 import store from '@/store/index'
+import {mapActions, mapGetters, mapState} from 'vuex'
 export default {
   name: 'wordCheck',
   data () {
     return {
-      data: {
-        datetime: '2018/10/13 11:11',
-        type: 'おこ',
-        words: ['きらい','むかつく','カメカメ'],
-      },
-      wordAnswer: {
-        1: true,
-        2: false,
-        3: false,
-      },
-      wordComp: 'loading'
     }
+  },
+  computed: {
+    ...mapGetters({
+      wordComp: 'wordComp',
+      data: 'data',
+    })
   },
   mounted () {
     this.$store.dispatch('getAPI')

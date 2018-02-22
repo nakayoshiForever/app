@@ -1,20 +1,27 @@
 <template lang="pug">
-.word-select
-  .word-header {{data.datetime}} の{{data.type}}！
-  .word-lists
-    .word-list(v-for="word, index in data.words")
-      el-checkbox(v-model="index" :label="word" border)
-  .word-button
-    el-button(type="primary" round) 決定する！
+  .word-select
+    .word-header {{data.datetime}} の{{data.type}}！
+    .word-lists
+      .word-list(v-for="word, index in data.words")
+        wordCheckbox(:word="word", :index="index")
+    .word-button
+      el-button(type="primary" round @click="sendAnswer()") 決定する！
 </template>
 <script>
 import data from '@/components/wordCheck' 
+import wordCheckbox from '@/components/modules/wordCheckbox' 
 export default {
   name: 'wordSelect',
-  components: {
-  },
   props: {
     data
+  },
+  methods: {
+    sendAnswer () {
+      this.$store.dispatch('sendAnswer')
+    }
+  },
+  components: {
+    wordCheckbox,
   }
 }
 </script>
