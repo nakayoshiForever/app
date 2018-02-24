@@ -35,13 +35,13 @@ export default new Vuex.Store({
   getters: {
     datas: (state) => state.datas,
     wordAnswers: (state) => state.wordAnswers,
-    wordTrueAnswers: (state, getters) => getters.wordAnswers.filter(answer => answer.value == true),
+    wordTrueAnswers: (state) => state.wordAnswers.filter(answer => answer.value === true),
     wordComp: (state) => state.wordComp,
     alreadyWord: (state, getters) => (text) => getters.datas.find(data => data.text === text)
   },
   mutations: {
     setData: (state, data) => {
-      state.data = data
+      state.datas = []
     },
     addData: (state, data) => {state.datas.push(data)},
     setWordComp: (state, compNo) => {
@@ -49,8 +49,8 @@ export default new Vuex.Store({
     },
     addAnswer: (state, answer) => {state.wordAnswers.push(answer)},
     updateAnswer: (state, payload) => {
-      let answer = state.wordAnswers.find(answer => answer._id === payload._id)
-      answer.value = payload.answer
+      let answer = state.wordAnswers.find(answer => answer._id == payload._id)
+      answer.value = payload.value
     }
   },
   actions: {
@@ -61,13 +61,13 @@ export default new Vuex.Store({
           commit('setWordComp',  compIndex)
           if (!res.data) return
           commit('setData', res.data)
-          console.log(getters.alreadyWord('ng'))
           res.data.forEach((data, index) => {
             if (data.text && !getters.alreadyWord(data.text)) {
               commit('addData', data)
-              commit('addAnswer', {id: data._id, data: data.text, value: false})
+              commit('addAnswer', {_id: data._id, text: data.text, value: false})
             }
           })
+          console.log(getters.wordAnswers)
         })
         .catch((e) => {
         })
@@ -77,10 +77,16 @@ export default new Vuex.Store({
       let sendValue = getters.wordTrueAnswers.map(answer => {
         return answer._id
       })
-      console.log(sendValue)
       //削除するよ
-      commit('setData', '')
-      commit('setWordComp', 2)
+      console.log(sendValue)
+      sendValue.forEach(value => {
+        axios.post('/ng')
+          .then(res => {
+            commit('setData', '')
+            commit('setWordComp', 2)
+          })
+          .catch()
+      })
     },
   },
   modules: {

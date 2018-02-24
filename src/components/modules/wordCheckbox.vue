@@ -15,8 +15,8 @@ export default {
     _id,
   },
   methods: {
-    updateAnswer (index) {
-      this.$store.commit('updateAnswer', {id: this._id, value: this.answer})
+    updateAnswer () {
+      this.$store.commit('updateAnswer', {_id: this._id, value: this.answer})
     }
   }
 }
