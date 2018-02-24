@@ -4,6 +4,7 @@ import router from '@/router'
 import axiosBase from 'axios'
 
 const baseURL = 'http://localhost:3000';
+const showDataNum = 20
 
 const axios = axiosBase.create({
   baseURL: baseURL,
@@ -24,13 +25,8 @@ export default new Vuex.Store({
       _id:
       text: 'きらい'
      * */
+    dataRemainder: [],
     wordAnswers: [],
-    /*
-      回答の保持のみ:格納例
-        1: true,
-        2: false,
-        3: false,
-     * */
     wordComps: ['loading', 'wordSelect', 'wordNone'],
     wordComp: 'loading',
     compTypes: ['ok', 'ng'],
@@ -38,6 +34,8 @@ export default new Vuex.Store({
   },
   getters: {
     datas: (state) => state.datas,
+    dataRemainder: (state) => state.dataRemainder,
+    dataRemainderById: (state) => (_id) => state.dataRemainder.find(data => data._id === _id),
     wordAnswers: (state) => state.wordAnswers,
     wordTrueAnswers: (state) => state.wordAnswers.filter(answer => answer.value === true),
     wordComp: (state) => state.wordComp,
@@ -51,7 +49,14 @@ export default new Vuex.Store({
     setAnswer: (state) => {
       state.wordAnwers = []
     },
+    deleteRemainderData: (state, _id) => {
+      let index = state.dataRemainder.find((data, index) => {
+        if (data._id === _id) return index
+      })
+      state.dataRemainder.splice(index, 1)
+    },
     addData: (state, data) => {state.datas.push(data)},
+    addDataRemainder: (state, data) => {state.dataRemainder.push(data)},
     setWordComp: (state, compNo) => {
       state.wordComp = state.wordComps[compNo]
     },
@@ -71,18 +76,31 @@ export default new Vuex.Store({
           const compIndex = res.data ? 1 : 2
           commit('setWordComp',  compIndex)
           if (!res.data) return
-          commit('setData', res.data)
+          commit('setData')// 初期化
+          let count = 0
           res.data.forEach((data, index) => {
-            if (data.text && !getters.alreadyWord(data.text)) {
-              commit('addData', data)
-              commit('addAnswer', {_id: data._id, text: data.text, value: false})
+            if (data.text && data.text.length > 2 && !getters.alreadyWord(data.text)) {
+              if (count < showDataNum) {
+                commit('addData', data)
+                commit('addAnswer', {_id: data._id, text: data.text, value: false})
+              } else {
+                commit('addDataRemainder', data)
+              }
+              count ++
             }
           })
         })
         .catch((e) => {
         })
     },
-    sendAnswer ({commit, getters}) {
+    setDataFromRemainder({commit, getters, dispatch}) {
+      getters.dataRemainder.forEach(data => {
+        commit('addData', data)
+        commit('deleteRemainderData', data)
+        commit('addAnswer', {_id: data._id, text: data.text, value: false})
+      })
+    },
+    sendAnswer ({commit, getters, dispatch}) {
       //postするよ
       let sendValue = getters.wordTrueAnswers.map(answer => {
         return answer._id
@@ -90,17 +108,21 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
+        /*
         axios.post('/ng', {
           params: {
             _id: value
           }
         })
           .then(res => {
-            commit('setData', '')
-            commit('setWordComp', 2)
+            dispatch('sendAfter', true)
           })
-          .catch()
+          .catch(() => {
+            dispatch('sendAfter', false)
+          })
+  */
       })
+      dispatch('sendAfter')
     },
     setCompType ({commit, getters, dispatch}, index) {
       // 初期化
@@ -109,6 +131,14 @@ export default new Vuex.Store({
       commit('setAnswer')
       dispatch('getAPI')
     },
+    sendAfter({commit, getters, dispatch}, sendStatus) {
+      commit('setData', '')
+      if (getters.dataRemainder.length > 0) {
+        dispatch('setDataFromRemainder')
+      } else {
+        commit('setWordComp', 2)
+      }
+    }
   },
   modules: {
   }

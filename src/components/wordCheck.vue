@@ -1,6 +1,10 @@
 <template lang="pug">
   layout
     .word(slot="main")
+      .word-header
+        .word-header-tab.ng(@click="changeCompType(1)") おこ
+        .word-header-tab.ok(@click="changeCompType(0)") にこ
+      .word-header-line(:class="compType")
       transition(name="slide-fade" mode="out-in")
         component(:is="wordComp" :datas="datas")
 </template>
@@ -22,10 +26,16 @@ export default {
     ...mapGetters({
       wordComp: 'wordComp',
       datas: 'datas',
+      compType: 'compType',
     })
   },
   mounted () {
     this.$store.dispatch('getAPI')
+  },
+  methods: {
+    changeCompType (index) {
+      this.$store.dispatch('setCompType', index)
+    }
   },
   components: {
     Layout,
@@ -53,5 +63,26 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateY(-10px);
   opacity: 0;
+}
+
+.word-header {
+  display: flex;
+  width: 100%;
+    &-tab {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 10px 0 5px 0;
+      text-align: center;
+    }
+}
+.word-header-line {
+  width: 100%;
+  height: 10px;
+}
+.ok {
+  background: #fdd;
+}
+.ng {
+  background: #ddf;
 }
 </style>

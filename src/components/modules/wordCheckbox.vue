@@ -1,8 +1,9 @@
 <template lang="pug">
-  el-checkbox(v-model="answer" :label="data.text" border @change="updateAnswer()")
+  .word-checkbox
+    el-checkbox(v-model="answer" :label="data.text" border @change="updateAnswer()")
 </template>
 <script>
-import {data, _id} from '@/components/modules/wordSelect'
+import {data, _id} from '@/components/modules/wordTab'
 export default {
   name: 'wordCheckbox',
   data () {
@@ -23,4 +24,6 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.word-checkbox {
+}
 </style>

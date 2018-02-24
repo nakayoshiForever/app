@@ -1,27 +1,20 @@
 <template lang="pug">
-  .word-select
-    .word-wraps
-      wordTab(:datas="datas")
-      .word-button(v-if="datas")
-        el-button(type="primary" round @click="sendAnswer()") 決定する！
+  .word-lists
+    .word-list(v-for="data in datas")
+      wordCheckbox(:data="data", :_id="data._id")
 </template>
 <script>
-import wordTab from '@/components/modules/wordTab' 
+import wordCheckbox from '@/components/modules/wordCheckbox' 
 import {mapActions, mapGetters, mapState} from 'vuex'
 export default {
-  name: 'wordSelect',
-  methods: {
-    sendAnswer () {
-      this.$store.dispatch('sendAnswer')
-    },
-  },
+  name: 'wordTab',
   computed: {
     ...mapGetters({
       datas: 'datas',
     })
   },
   components: {
-    wordTab,
+    wordCheckbox,
   }
 }
 </script>
