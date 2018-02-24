@@ -2,9 +2,11 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import router from '@/router'
 import axiosBase from 'axios'
+const mockUrl = 'http://localhost:3000/data';
+const nodeRedUrl = 'https://forever-hackchu.mybluemix.net/get/query';
 
 const axios = axiosBase.create({
-  baseURL: 'http://localhost:3000/data',
+  baseURL: mockUrl,
   headers: {
     'ContentType': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
@@ -62,6 +64,8 @@ export default new Vuex.Store({
     getAPI ({commit, getters}) {
       axios.get('/')
         .then(res => {
+          console.log(res);
+          /* 
           const compIndex = res.data ? 1 : 2
           commit('setWordComp',  compIndex)
           if (!res.data) return
@@ -69,6 +73,7 @@ export default new Vuex.Store({
           res.data.words.forEach((word, index) => {
             commit('addAnswer', {index: index, word: word, value: false})
           })
+          */
         })
         .catch((e) => {
         })

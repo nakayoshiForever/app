@@ -1,0 +1,1249 @@
+[
+  {
+    "_id": "2deb5b08976e7f68d37ae35bff1f45ab",
+    "_rev": "1-5bc636fcdbce6cd06434e48e90e11950",
+    "topic": "中京テレビハッカソン｡HackChu Node-Redを使ったテスト",
+    "payload": "",
+    "speech": "",
+    "transcription": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 濃度 連れて を 使った テスト ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "中京",
+                  0.03,
+                  0.48
+                ],
+                [
+                  "テレビ",
+                  0.48,
+                  0.86
+                ],
+                [
+                  "ハッカソン",
+                  0.86,
+                  1.52
+                ],
+                [
+                  "ｈ",
+                  1.77,
+                  2.22
+                ],
+                [
+                  "ａ",
+                  2.22,
+                  2.64
+                ],
+                [
+                  "四",
+                  2.64,
+                  2.9
+                ],
+                [
+                  "桂",
+                  2.9,
+                  3.15
+                ],
+                [
+                  "子",
+                  3.15,
+                  3.36
+                ]
+              ],
+              "confidence": 0.744,
+              "transcript": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 "
+            }
+          ],
+          "final": true
+        },
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "濃度",
+                  4.43,
+                  4.83
+                ],
+                [
+                  "連れて",
+                  4.83,
+                  5.28
+                ],
+                [
+                  "を",
+                  5.28,
+                  5.37
+                ],
+                [
+                  "使った",
+                  5.37,
+                  5.85
+                ],
+                [
+                  "テスト",
+                  5.85,
+                  6.39
+                ]
+              ],
+              "confidence": 0.571,
+              "transcript": "濃度 連れて を 使った テスト "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.48,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.48,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.86,
+          "to": 1.52,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 1.77,
+          "to": 2.22,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.22,
+          "to": 2.64,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.64,
+          "to": 2.9,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.9,
+          "to": 3.15,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 3.15,
+          "to": 3.36,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 4.43,
+          "to": 4.83,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 4.83,
+          "to": 5.28,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.28,
+          "to": 5.37,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.37,
+          "to": 5.85,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.85,
+          "to": 6.39,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519445009505
+  },
+  {
+    "_id": "40200e983825d8ba9611229224d32f7b",
+    "_rev": "1-ddf10aa02896f9c4a6b2fe7e5ce55f38",
+    "topic": "",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519209788108
+  },
+  {
+    "_id": "4702cfe83306320356b7667b5711ae6a",
+    "_rev": "1-8648be0c2cf5c72af375bcfee08f0e01",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519444576599
+  },
+  {
+    "_id": "4702cfe83306320356b7667b571a0a58",
+    "_rev": "1-8e5407073e7c64d13be299d9f9cb4771",
+    "topic": "中京テレビハッカソン｡HackChu Node-Redを使ったテスト",
+    "payload": "",
+    "speech": "",
+    "transcription": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 濃度 連れて を 使った テスト ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "中京",
+                  0.03,
+                  0.48
+                ],
+                [
+                  "テレビ",
+                  0.48,
+                  0.86
+                ],
+                [
+                  "ハッカソン",
+                  0.86,
+                  1.52
+                ],
+                [
+                  "ｈ",
+                  1.77,
+                  2.22
+                ],
+                [
+                  "ａ",
+                  2.22,
+                  2.64
+                ],
+                [
+                  "四",
+                  2.64,
+                  2.9
+                ],
+                [
+                  "桂",
+                  2.9,
+                  3.15
+                ],
+                [
+                  "子",
+                  3.15,
+                  3.36
+                ]
+              ],
+              "confidence": 0.744,
+              "transcript": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 "
+            }
+          ],
+          "final": true
+        },
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "濃度",
+                  4.43,
+                  4.83
+                ],
+                [
+                  "連れて",
+                  4.83,
+                  5.28
+                ],
+                [
+                  "を",
+                  5.28,
+                  5.37
+                ],
+                [
+                  "使った",
+                  5.37,
+                  5.85
+                ],
+                [
+                  "テスト",
+                  5.85,
+                  6.39
+                ]
+              ],
+              "confidence": 0.571,
+              "transcript": "濃度 連れて を 使った テスト "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.48,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.48,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.86,
+          "to": 1.52,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 1.77,
+          "to": 2.22,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.22,
+          "to": 2.64,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.64,
+          "to": 2.9,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.9,
+          "to": 3.15,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 3.15,
+          "to": 3.36,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 4.43,
+          "to": 4.83,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 4.83,
+          "to": 5.28,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.28,
+          "to": 5.37,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.37,
+          "to": 5.85,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.85,
+          "to": 6.39,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519444996576
+  },
+  {
+    "_id": "6603df6ab5a3d99e3d7fce1430a9456b",
+    "_rev": "1-86c24ea4e16598c03e17bb4a0f4495ae",
+    "topic": "中京テレビハッカソン｡HackChu Node-Redを使ったテスト",
+    "payload": "",
+    "speech": "",
+    "transcription": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 濃度 連れて を 使った テスト ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "中京",
+                  0.03,
+                  0.48
+                ],
+                [
+                  "テレビ",
+                  0.48,
+                  0.86
+                ],
+                [
+                  "ハッカソン",
+                  0.86,
+                  1.52
+                ],
+                [
+                  "ｈ",
+                  1.77,
+                  2.22
+                ],
+                [
+                  "ａ",
+                  2.22,
+                  2.64
+                ],
+                [
+                  "四",
+                  2.64,
+                  2.9
+                ],
+                [
+                  "桂",
+                  2.9,
+                  3.15
+                ],
+                [
+                  "子",
+                  3.15,
+                  3.36
+                ]
+              ],
+              "confidence": 0.744,
+              "transcript": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 "
+            }
+          ],
+          "final": true
+        },
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "濃度",
+                  4.43,
+                  4.83
+                ],
+                [
+                  "連れて",
+                  4.83,
+                  5.28
+                ],
+                [
+                  "を",
+                  5.28,
+                  5.37
+                ],
+                [
+                  "使った",
+                  5.37,
+                  5.85
+                ],
+                [
+                  "テスト",
+                  5.85,
+                  6.39
+                ]
+              ],
+              "confidence": 0.571,
+              "transcript": "濃度 連れて を 使った テスト "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.48,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.48,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.86,
+          "to": 1.52,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 1.77,
+          "to": 2.22,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.22,
+          "to": 2.64,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.64,
+          "to": 2.9,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.9,
+          "to": 3.15,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 3.15,
+          "to": 3.36,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 4.43,
+          "to": 4.83,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 4.83,
+          "to": 5.28,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.28,
+          "to": 5.37,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.37,
+          "to": 5.85,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.85,
+          "to": 6.39,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519445000428
+  },
+  {
+    "_id": "78e9ef8d0fbd4bae6c8fea71c5c2ee44",
+    "_rev": "1-d319fb150f99ee2898f2925d93fa6789",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519442275655
+  },
+  {
+    "_id": "8e56a4936e1c738d6669b04294b7e647",
+    "_rev": "1-617ad763e4de5659dca0744402902966",
+    "topic": "中京テレビハッカソン｡HackChu Node-Redを使ったテスト",
+    "payload": "",
+    "speech": "",
+    "transcription": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 濃度 連れて を 使った テスト ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "中京",
+                  0.03,
+                  0.48
+                ],
+                [
+                  "テレビ",
+                  0.48,
+                  0.86
+                ],
+                [
+                  "ハッカソン",
+                  0.86,
+                  1.52
+                ],
+                [
+                  "ｈ",
+                  1.77,
+                  2.22
+                ],
+                [
+                  "ａ",
+                  2.22,
+                  2.64
+                ],
+                [
+                  "四",
+                  2.64,
+                  2.9
+                ],
+                [
+                  "桂",
+                  2.9,
+                  3.15
+                ],
+                [
+                  "子",
+                  3.15,
+                  3.36
+                ]
+              ],
+              "confidence": 0.744,
+              "transcript": "中京 テレビ ハッカソン ｈ ａ 四 桂 子 "
+            }
+          ],
+          "final": true
+        },
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "濃度",
+                  4.43,
+                  4.83
+                ],
+                [
+                  "連れて",
+                  4.83,
+                  5.28
+                ],
+                [
+                  "を",
+                  5.28,
+                  5.37
+                ],
+                [
+                  "使った",
+                  5.37,
+                  5.85
+                ],
+                [
+                  "テスト",
+                  5.85,
+                  6.39
+                ]
+              ],
+              "confidence": 0.571,
+              "transcript": "濃度 連れて を 使った テスト "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.48,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.48,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 0.86,
+          "to": 1.52,
+          "speaker": 0,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 1.77,
+          "to": 2.22,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.22,
+          "to": 2.64,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.64,
+          "to": 2.9,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 2.9,
+          "to": 3.15,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 3.15,
+          "to": 3.36,
+          "speaker": 1,
+          "confidence": 0.667,
+          "final": false
+        },
+        {
+          "from": 4.43,
+          "to": 4.83,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 4.83,
+          "to": 5.28,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.28,
+          "to": 5.37,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.37,
+          "to": 5.85,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": false
+        },
+        {
+          "from": 5.85,
+          "to": 6.39,
+          "speaker": 2,
+          "confidence": 0.489,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519444967383
+  },
+  {
+    "_id": "9b473fcc128e2fbb59d833f375a7b235",
+    "_rev": "1-ffd914fcd1f2cc714c64b09e2c011224",
+    "topic": "中京テレビハッカソン｡ハックチュー｡ノードレッドを使ったテスト",
+    "payload": "",
+    "speech": "",
+    "transcription": "中京 テレビ ハッカソン 白昼 堂々 D_エート を 使った テスト ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "中京",
+                  0.03,
+                  0.48
+                ],
+                [
+                  "テレビ",
+                  0.48,
+                  0.86
+                ],
+                [
+                  "ハッカソン",
+                  0.86,
+                  1.52
+                ],
+                [
+                  "白昼",
+                  1.77,
+                  2.57
+                ],
+                [
+                  "堂々",
+                  2.8,
+                  3.21
+                ],
+                [
+                  "D_エート",
+                  3.21,
+                  3.55
+                ],
+                [
+                  "を",
+                  3.55,
+                  3.62
+                ],
+                [
+                  "使った",
+                  3.62,
+                  4.1
+                ],
+                [
+                  "テスト",
+                  4.1,
+                  4.64
+                ]
+              ],
+              "confidence": 0.726,
+              "transcript": "中京 テレビ ハッカソン 白昼 堂々 D_エート を 使った テスト "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.48,
+          "speaker": 0,
+          "confidence": 0.492,
+          "final": false
+        },
+        {
+          "from": 0.48,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.492,
+          "final": false
+        },
+        {
+          "from": 0.86,
+          "to": 1.52,
+          "speaker": 0,
+          "confidence": 0.492,
+          "final": false
+        },
+        {
+          "from": 1.77,
+          "to": 2.57,
+          "speaker": 1,
+          "confidence": 0.523,
+          "final": false
+        },
+        {
+          "from": 2.8,
+          "to": 3.21,
+          "speaker": 2,
+          "confidence": 0.483,
+          "final": false
+        },
+        {
+          "from": 3.21,
+          "to": 3.55,
+          "speaker": 2,
+          "confidence": 0.483,
+          "final": false
+        },
+        {
+          "from": 3.55,
+          "to": 3.62,
+          "speaker": 2,
+          "confidence": 0.483,
+          "final": false
+        },
+        {
+          "from": 3.62,
+          "to": 4.1,
+          "speaker": 2,
+          "confidence": 0.483,
+          "final": false
+        },
+        {
+          "from": 4.1,
+          "to": 4.64,
+          "speaker": 2,
+          "confidence": 0.483,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519445038365
+  },
+  {
+    "_id": "b3cd6f2e0f24d1519fe5e4574b0090fd",
+    "_rev": "1-78fff7f2678c840bf2842f4da745ca70",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519442229945
+  },
+  {
+    "_id": "cb2746dde8ce41f18628efe87bea497c",
+    "_rev": "1-fb6daa5893341a145f625a6dbc13fddb",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519442580989
+  },
+  {
+    "_id": "d6034cc69b7e34a5271f27400d6bf4ae",
+    "_rev": "1-a745eb186990d2b339782229cf5129e2",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519442273971
+  },
+  {
+    "_id": "d64ffc2420c8891a32f7729794c2ef98",
+    "_rev": "1-f8e242716e033f8e33a49c2a9e4740dd",
+    "payload": "",
+    "topic": "ぱぱぱのぱーの",
+    "speech": "",
+    "transcription": "高田 のか D_アノー ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "高田",
+                  0.03,
+                  0.43
+                ],
+                [
+                  "のか",
+                  0.43,
+                  0.69
+                ],
+                [
+                  "D_アノー",
+                  0.69,
+                  1.09
+                ]
+              ],
+              "confidence": 0.408,
+              "transcript": "高田 のか D_アノー "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.43,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": false
+        },
+        {
+          "from": 0.43,
+          "to": 0.69,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": false
+        },
+        {
+          "from": 0.69,
+          "to": 1.09,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519210013410
+  },
+  {
+    "_id": "f3d9f84c44cd74f12ede249e2213b1fc",
+    "_rev": "1-6687ac6ed95db43a9f3c1e5e9c793f1f",
+    "topic": "こんにちは",
+    "payload": "",
+    "speech": "",
+    "transcription": "こんにちは ",
+    "fullresult": {
+      "results": [
+        {
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "こんにちは",
+                  0.03,
+                  0.86
+                ]
+              ],
+              "confidence": 0.993,
+              "transcript": "こんにちは "
+            }
+          ],
+          "final": true
+        }
+      ],
+      "result_index": 0,
+      "speaker_labels": [
+        {
+          "from": 0.03,
+          "to": 0.86,
+          "speaker": 0,
+          "confidence": 0.5,
+          "final": true
+        }
+      ]
+    },
+    "timestamp": 1519209995591
+  }
+]
