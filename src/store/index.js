@@ -3,8 +3,10 @@ import Vuex from 'vuex'
 import router from '@/router'
 import axiosBase from 'axios'
 
+const baseURL = 'http://localhost:3000';
+
 const axios = axiosBase.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: baseURL,
   headers: {
     'ContentType': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
@@ -31,17 +33,23 @@ export default new Vuex.Store({
      * */
     wordComps: ['loading', 'wordSelect', 'wordNone'],
     wordComp: 'loading',
+    compTypes: ['ok', 'ng'],
+    compType: 'ng',
   },
   getters: {
     datas: (state) => state.datas,
     wordAnswers: (state) => state.wordAnswers,
     wordTrueAnswers: (state) => state.wordAnswers.filter(answer => answer.value === true),
     wordComp: (state) => state.wordComp,
-    alreadyWord: (state, getters) => (text) => getters.datas.find(data => data.text === text)
+    alreadyWord: (state, getters) => (text) => getters.datas.find(data => data.text === text),
+    compType: (state) => state.compType,
   },
   mutations: {
-    setData: (state, data) => {
+    setData: (state) => {
       state.datas = []
+    },
+    setAnswer: (state) => {
+      state.wordAnwers = []
     },
     addData: (state, data) => {state.datas.push(data)},
     setWordComp: (state, compNo) => {
@@ -51,11 +59,14 @@ export default new Vuex.Store({
     updateAnswer: (state, payload) => {
       let answer = state.wordAnswers.find(answer => answer._id == payload._id)
       answer.value = payload.value
-    }
+    },
+    setCompType: (state, index) => {
+      state.compType = state.compTypes[index]
+    },
   },
   actions: {
     getAPI ({commit, getters}) {
-      axios.get('/ng')
+      axios.get(`/${getters.compType}`)
         .then(res => {
           const compIndex = res.data ? 1 : 2
           commit('setWordComp',  compIndex)
@@ -67,7 +78,6 @@ export default new Vuex.Store({
               commit('addAnswer', {_id: data._id, text: data.text, value: false})
             }
           })
-          console.log(getters.wordAnswers)
         })
         .catch((e) => {
         })
@@ -80,13 +90,24 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
-        axios.post('/ng')
+        axios.post('/ng', {
+          params: {
+            _id: value
+          }
+        })
           .then(res => {
             commit('setData', '')
             commit('setWordComp', 2)
           })
           .catch()
       })
+    },
+    setCompType ({commit, getters, dispatch}, index) {
+      // 初期化
+      commit('setCompType', index)
+      commit('setData')
+      commit('setAnswer')
+      dispatch('getAPI')
     },
   },
   modules: {
