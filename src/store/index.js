@@ -94,10 +94,15 @@ export default new Vuex.Store({
         })
     },
     setDataFromRemainder({commit, getters, dispatch}) {
+      let count = 0
+      console.log(getters.dataRemainder)
       getters.dataRemainder.forEach(data => {
-        commit('addData', data)
-        commit('deleteRemainderData', data)
-        commit('addAnswer', {_id: data._id, text: data.text, value: false})
+        if (count < 20) {
+          commit('addData', data)
+          commit('deleteRemainderData', data)
+          commit('addAnswer', {_id: data._id, text: data.text, value: false})
+          count ++
+        }
       })
     },
     sendAnswer ({commit, getters, dispatch}) {
@@ -132,9 +137,11 @@ export default new Vuex.Store({
       dispatch('getAPI')
     },
     sendAfter({commit, getters, dispatch}, sendStatus) {
+      commit('setWordComp', 0)
       commit('setData', '')
       if (getters.dataRemainder.length > 0) {
         dispatch('setDataFromRemainder')
+        commit('setWordComp', 1)
       } else {
         commit('setWordComp', 2)
       }
