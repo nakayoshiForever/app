@@ -1,19 +1,19 @@
 <template lang="pug">
   .word-select
-    .word-header {{data.datetime}} の{{data.type}}！
+    .word-header おこワードを選択してください 
     .word-lists
-      .word-list(v-for="word, index in data.words")
-        wordCheckbox(:word="word", :index="index")
+      .word-list(v-for="data in datas")
+        wordCheckbox(:data="data", :_id="data._id")
     .word-button
       el-button(type="primary" round @click="sendAnswer()") 決定する！
 </template>
 <script>
-import data from '@/components/wordCheck' 
+import datas from '@/components/wordCheck' 
 import wordCheckbox from '@/components/modules/wordCheckbox' 
 export default {
   name: 'wordSelect',
   props: {
-    data
+    datas
   },
   methods: {
     sendAnswer () {

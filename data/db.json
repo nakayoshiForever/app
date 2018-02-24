@@ -3,5 +3,250 @@
         "datetime": "2018/11/13 11:11",
         "type": "おこ",
         "words": ["ばか", "きらい", "あほ", "ブス"]
+    },
+    "ok": [
+        {
+            "_id": "15bb6ef3181613575ed6e59f3c4e03a8",
+            "_rev": "1-235ddb3674f4327b920ac3f936d91aea",
+            "text": "ok",
+            "timestamp": 1519450860137
+    },
+        {
+            "_id": "15bb6ef3181613575ed6e59f3c4ff922",
+            "_rev": "1-85a9c611aad0566382450513302fdd15",
+            "text": "白昼",
+            "timestamp": 1519450997701
+    },
+        {
+            "_id": "2deb5b08976e7f68d37ae35bffb1604c",
+            "_rev": "1-ee8eb4c619ba41e25bcb3f2b87b6d305",
+            "text": "白昼",
+            "timestamp": 1519450860133
+    },
+        {
+            "_id": "2deb5b08976e7f68d37ae35bffb36b27",
+            "_rev": "1-0d2bdbf1d483ef684b24d2b72dca86ad",
+            "text": "テスト",
+            "timestamp": 1519450997715
+    },
+        {
+            "_id": "2eae58ded76382ec5222983110c587a3",
+            "_rev": "1-870242854673818b9961e7a046672756",
+            "text": "堂々",
+            "timestamp": 1519450860134
+    },
+        {
+            "_id": "2eae58ded76382ec5222983110c7553a",
+            "_rev": "1-6ac470b917c6276808cf39fba00e69f9",
+            "text": "を",
+            "timestamp": 1519450997706
+    },
+        {
+            "_id": "3fe8697788233b4f755a99e1008f27bc",
+            "_rev": "1-80cb0b6ea82f3d7aef83eeac9544fd49",
+            "text": "",
+            "timestamp": 1519450860143
+    },
+        {
+            "_id": "3fe8697788233b4f755a99e10090904f",
+            "_rev": "1-134d34ba700706b4b3cf7632b2f331af",
+            "text": "ハッカソン",
+            "timestamp": 1519450997690
+    },
+        {
+            "_id": "4702cfe83306320356b7667b57aa371c",
+            "_rev": "1-221ae6b6ed59167754ab1c8fc334a1f7",
+            "text": "テレビ",
+            "timestamp": 1519450860130
+    },
+        {
+            "_id": "4702cfe83306320356b7667b57ac0929",
+            "_rev": "1-5b7a9b4747b5d9f23cccf7e5ede3ba99",
+            "text": "D_エート",
+            "timestamp": 1519450997704
+    },
+        {
+            "_id": "5c79b395e14fd1790c8b5d502037c289",
+            "_rev": "1-a1304e16432c93981b4f0a3c68a44fcc",
+            "text": "ハッカソン",
+            "timestamp": 1519450860132
+    },
+        {
+            "_id": "5c79b395e14fd1790c8b5d50203994c6",
+            "_rev": "1-dfb0784ccd7260648aacfb77579685fa",
+            "text": "テレビ",
+            "timestamp": 1519450997688
+    },
+        {
+            "_id": "5ca34b475c64e55a973bedb1a1356132",
+            "_rev": "1-eda1641733ec1463926d3ad92f593c8e",
+            "text": "D_エート",
+            "timestamp": 1519450860136
+    },
+        {
+            "_id": "5ca34b475c64e55a973bedb1a1373fc2",
+            "_rev": "1-0b2f1271e1b61d6169fb9c4c22d399cf",
+            "text": "使った",
+            "timestamp": 1519450997713
+    },
+        {
+            "_id": "6fed372fc13fba22b4dc3373c7d93588",
+            "_rev": "1-5ea737144122ce58d9001711ce9b64a5",
+            "text": "中京",
+            "timestamp": 1519450860126
+    },
+        {
+            "_id": "6fed372fc13fba22b4dc3373c7db1bc3",
+            "_rev": "1-75b0738672ac2c0ce48570104e5eb5da",
+            "text": "中京",
+            "timestamp": 1519450997683
+    },
+        {
+            "_id": "a9453ba04facef8b447798b75f337ac4",
+            "_rev": "1-b58695fbfa9a6e4453e68c23d58b8c58",
+            "text": "",
+            "timestamp": 1519450997717
+    },
+        {
+            "_id": "b3cd6f2e0f24d1519fe5e4574bd1d208",
+            "_rev": "1-12369d8845b62bd08623ac2f401f8298",
+            "text": "使った",
+            "timestamp": 1519450860138
+    },
+        {
+            "_id": "b3cd6f2e0f24d1519fe5e4574bd32156",
+            "_rev": "1-115d6be56b4f2ba242f5729abea39892",
+            "text": "堂々",
+            "timestamp": 1519450997702
+    },
+        {
+            "_id": "e548536ec96786c55b2cb572cc92ef0d",
+            "_rev": "1-ddde0afd779f9308b41d05d238a777e0",
+            "text": "テスト",
+            "timestamp": 1519450860142
     }
+],
+    "ng": [
+        {
+            "_id": "15bb6ef3181613575ed6e59f3c4e03a8",
+            "_rev": "1-235ddb3674f4327b920ac3f936d91aea",
+            "text": "ng",
+            "timestamp": 1519450860137
+    },
+        {
+            "_id": "15bb6ef3181613575ed6e59f3c4ff922",
+            "_rev": "1-85a9c611aad0566382450513302fdd15",
+            "text": "白昼",
+            "timestamp": 1519450997701
+    },
+        {
+            "_id": "2deb5b08976e7f68d37ae35bffb1604c",
+            "_rev": "1-ee8eb4c619ba41e25bcb3f2b87b6d305",
+            "text": "白昼",
+            "timestamp": 1519450860133
+    },
+        {
+            "_id": "2deb5b08976e7f68d37ae35bffb36b27",
+            "_rev": "1-0d2bdbf1d483ef684b24d2b72dca86ad",
+            "text": "テスト",
+            "timestamp": 1519450997715
+    },
+        {
+            "_id": "2eae58ded76382ec5222983110c587a3",
+            "_rev": "1-870242854673818b9961e7a046672756",
+            "text": "堂々",
+            "timestamp": 1519450860134
+    },
+        {
+            "_id": "2eae58ded76382ec5222983110c7553a",
+            "_rev": "1-6ac470b917c6276808cf39fba00e69f9",
+            "text": "を",
+            "timestamp": 1519450997706
+    },
+        {
+            "_id": "3fe8697788233b4f755a99e1008f27bc",
+            "_rev": "1-80cb0b6ea82f3d7aef83eeac9544fd49",
+            "text": "",
+            "timestamp": 1519450860143
+    },
+        {
+            "_id": "3fe8697788233b4f755a99e10090904f",
+            "_rev": "1-134d34ba700706b4b3cf7632b2f331af",
+            "text": "ハッカソン",
+            "timestamp": 1519450997690
+    },
+        {
+            "_id": "4702cfe83306320356b7667b57aa371c",
+            "_rev": "1-221ae6b6ed59167754ab1c8fc334a1f7",
+            "text": "テレビ",
+            "timestamp": 1519450860130
+    },
+        {
+            "_id": "4702cfe83306320356b7667b57ac0929",
+            "_rev": "1-5b7a9b4747b5d9f23cccf7e5ede3ba99",
+            "text": "D_エート",
+            "timestamp": 1519450997704
+    },
+        {
+            "_id": "5c79b395e14fd1790c8b5d502037c289",
+            "_rev": "1-a1304e16432c93981b4f0a3c68a44fcc",
+            "text": "ハッカソン",
+            "timestamp": 1519450860132
+    },
+        {
+            "_id": "5c79b395e14fd1790c8b5d50203994c6",
+            "_rev": "1-dfb0784ccd7260648aacfb77579685fa",
+            "text": "テレビ",
+            "timestamp": 1519450997688
+    },
+        {
+            "_id": "5ca34b475c64e55a973bedb1a1356132",
+            "_rev": "1-eda1641733ec1463926d3ad92f593c8e",
+            "text": "D_エート",
+            "timestamp": 1519450860136
+    },
+        {
+            "_id": "5ca34b475c64e55a973bedb1a1373fc2",
+            "_rev": "1-0b2f1271e1b61d6169fb9c4c22d399cf",
+            "text": "使った",
+            "timestamp": 1519450997713
+    },
+        {
+            "_id": "6fed372fc13fba22b4dc3373c7d93588",
+            "_rev": "1-5ea737144122ce58d9001711ce9b64a5",
+            "text": "中京",
+            "timestamp": 1519450860126
+    },
+        {
+            "_id": "6fed372fc13fba22b4dc3373c7db1bc3",
+            "_rev": "1-75b0738672ac2c0ce48570104e5eb5da",
+            "text": "中京",
+            "timestamp": 1519450997683
+    },
+        {
+            "_id": "a9453ba04facef8b447798b75f337ac4",
+            "_rev": "1-b58695fbfa9a6e4453e68c23d58b8c58",
+            "text": "",
+            "timestamp": 1519450997717
+    },
+        {
+            "_id": "b3cd6f2e0f24d1519fe5e4574bd1d208",
+            "_rev": "1-12369d8845b62bd08623ac2f401f8298",
+            "text": "使った",
+            "timestamp": 1519450860138
+    },
+        {
+            "_id": "b3cd6f2e0f24d1519fe5e4574bd32156",
+            "_rev": "1-115d6be56b4f2ba242f5729abea39892",
+            "text": "堂々",
+            "timestamp": 1519450997702
+    },
+        {
+            "_id": "e548536ec96786c55b2cb572cc92ef0d",
+            "_rev": "1-ddde0afd779f9308b41d05d238a777e0",
+            "text": "テスト",
+            "timestamp": 1519450860142
+    }
+]
+
 }

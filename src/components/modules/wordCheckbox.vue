@@ -1,8 +1,8 @@
 <template lang="pug">
-  el-checkbox(v-model="answer" :label="word" border @change="updateAnswer()")
+  el-checkbox(v-model="answer" :label="data.text" border @change="updateAnswer()")
 </template>
 <script>
-import {word, index} from '@/components/modules/wordSelect' 
+import {data, _id} from '@/components/modules/wordSelect'
 export default {
   name: 'wordCheckbox',
   data () {
@@ -11,12 +11,12 @@ export default {
     }
   },
   props: {
-    word,
-    index,
+    data,
+    _id,
   },
   methods: {
     updateAnswer (index) {
-      this.$store.commit('updateAnswer', { index: this.index, answer: this.answer})
+      this.$store.commit('updateAnswer', {id: this._id, value: this.answer})
     }
   }
 }

@@ -9,11 +9,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'rolling',
-      component: rolling
-    },
-    {
-      path: '/wordcheck',
       name: 'wordCheck',
       component: wordCheck
     },

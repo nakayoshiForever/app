@@ -2,7 +2,7 @@
   layout
     .word(slot="main")
       transition(name="slide-fade" mode="out-in")
-        component(:is="wordComp" :data="data")
+        component(:is="wordComp" :datas="datas")
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
   computed: {
     ...mapGetters({
       wordComp: 'wordComp',
-      data: 'data',
+      datas: 'datas',
     })
   },
   mounted () {
