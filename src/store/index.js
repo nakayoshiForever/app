@@ -10,7 +10,7 @@ const showDataNum = 20
 const axios = axiosBase.create({
   baseURL: apiURL,
   headers: {
-    'ContentType': 'application/x-www-form-urlencoded ',
+    'ContentType': 'application/x-www-form-urlencoded',
     'X-Requested-With': 'XMLHttpRequest',
     
   },
