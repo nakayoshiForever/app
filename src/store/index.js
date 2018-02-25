@@ -81,7 +81,7 @@ export default new Vuex.Store({
           commit('setData')// 初期化
           let count = 0
           res.data.forEach((data, index) => {
-            if (data.text && data.text.length > 2 && !getters.alreadyWord(data.text)) {
+            if (data.text && data.text.length >= 2 && !getters.alreadyWord(data.text)) {
               if (count < showDataNum) {
                 console.log("get")
                 console.log(data)
