@@ -72,7 +72,7 @@ export default new Vuex.Store({
   },
   actions: {
     getAPI ({commit, getters}) {
-      axios.get(`/${getters.compType}`)
+      axios.get(`/${getters.compType}/maybe`)
         .then(res => {
           const compIndex = res.data ? 1 : 2
           commit('setWordComp',  compIndex)
@@ -114,7 +114,7 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
-        axios.post('/ng', {
+        axios.post(`/${getters.compType}`, {
           params: {
             _id: value
           }
