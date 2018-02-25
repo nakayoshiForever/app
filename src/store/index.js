@@ -110,8 +110,6 @@ export default new Vuex.Store({
     sendAnswer ({commit, getters, dispatch}) {
       //postするよ
       let sendValue = getters.wordTrueAnswers.map(answer => {
-        console.log("selectanswer")
-        console.log(answer.id)
         return answer.id
       })
       //削除するよ
@@ -123,9 +121,11 @@ export default new Vuex.Store({
           }
         })
           .then(res => {
+            console.log("postできました");
             dispatch('sendAfter', true)
           })
           .catch(() => {
+            console.log("postできませんでした");
             dispatch('sendAfter', false)
           })
       })
