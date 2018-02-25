@@ -91,6 +91,7 @@ export default new Vuex.Store({
               count ++
             }
           })
+          console.log(getters.datas)
         })
         .catch((e) => {
         })
