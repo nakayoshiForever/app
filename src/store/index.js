@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import router from '@/router'
 import axiosBase from 'axios'
 
-const baseURL = 'http://localhost:3000';
+const mockURL = 'http://localhost:3000';
 const apiURL = '/word';
 const showDataNum = 20
 
