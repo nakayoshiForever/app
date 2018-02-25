@@ -8,7 +8,7 @@ const apiURL = '/word';
 const showDataNum = 20
 
 const axios = axiosBase.create({
-  baseURL: baseURL,
+  baseURL: apiURL,
   headers: {
     'ContentType': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'
