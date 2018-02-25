@@ -114,7 +114,6 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
-        /*
         axios.post('/ng', {
           params: {
             _id: value
@@ -126,9 +125,7 @@ export default new Vuex.Store({
           .catch(() => {
             dispatch('sendAfter', false)
           })
-  */
       })
-      dispatch('sendAfter')
     },
     setCompType ({commit, getters, dispatch}, index) {
       // 初期化
