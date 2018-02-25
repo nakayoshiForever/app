@@ -2,8 +2,14 @@
   layout
     .word(slot="main")
       .word-header
-        .word-header-tab.ng(@click="changeCompType(1)") おこ
-        .word-header-tab.ok(@click="changeCompType(0)") にこ
+        .word-header-tab.ng(@click="changeCompType(1)")
+          .text おこ!
+          .ok-svg
+            img(src="https://forever-hackchu.mybluemix.net/static/svg/1.svg")
+        .word-header-tab.ok(@click="changeCompType(0)")
+          .text にこ!
+          .ng-svg
+            img(src="https://forever-hackchu.mybluemix.net/static/svg/0.svg")
       .word-header-line(:class="compType")
       transition(name="slide-fade" mode="out-in")
         component(:is="wordComp" :datas="datas")
@@ -80,9 +86,9 @@ export default {
   height: 10px;
 }
 .ok {
-  background: #fdd;
+  background: #73c1d5;
 }
 .ng {
-  background: #ddf;
+  background: #e4504f;
 }
 </style>
