@@ -63,6 +63,7 @@ export default new Vuex.Store({
     },
     addAnswer: (state, answer) => {state.wordAnswers.push(answer)},
     updateAnswer: (state, payload) => {
+      console.log(payload)
       let answer = state.wordAnswers.find(answer => answer.id == payload.id)
       answer.value = payload.value
     },
@@ -109,6 +110,8 @@ export default new Vuex.Store({
     sendAnswer ({commit, getters, dispatch}) {
       //postするよ
       let sendValue = getters.wordTrueAnswers.map(answer => {
+        console.log("selectanswer")
+        console.log(answer.id)
         return answer.id
       })
       //削除するよ
