@@ -116,7 +116,7 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
-        console.log(id)
+        console.log(value.id)
         axios.post(`/${getters.compType}`, {
           params: {
             id: value
