@@ -118,13 +118,7 @@ export default new Vuex.Store({
       console.log(sendValue)
       sendValue.forEach(value => {
         console.log(value)
-        let data = getters.dataById(value)
-        axios.post(`/${getters.compType}`, {
-          params: {
-            id: data.id,
-            text: data.text,
-          }
-        })
+        axios.post(`/${getters.compType}`, value)
           .then(res => {
             console.log(res);
             dispatch('sendAfter', true)
