@@ -124,11 +124,11 @@ export default new Vuex.Store({
           }
         })
           .then(res => {
-            console.log("postできました");
+            console.log(res);
             dispatch('sendAfter', true)
           })
-          .catch(() => {
-            console.log("postできませんでした");
+          .catch((e) => {
+            console.log(e);
             dispatch('sendAfter', false)
           })
       })
