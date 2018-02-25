@@ -83,6 +83,8 @@ export default new Vuex.Store({
           res.data.forEach((data, index) => {
             if (data.text && data.text.length > 2 && !getters.alreadyWord(data.text)) {
               if (count < showDataNum) {
+                console.log("get")
+                console.log(data)
                 commit('addData', data)
                 commit('addAnswer', {id: data.id, text: data.text, value: false})
               } else {
@@ -91,7 +93,6 @@ export default new Vuex.Store({
               count ++
             }
           })
-          console.log(getters.datas)
         })
         .catch((e) => {
         })
@@ -130,6 +131,7 @@ export default new Vuex.Store({
             dispatch('sendAfter', false)
           })
       })
+      if (sendValue.length == 0) dispatch('sendAfter', true)
     },
     setCompType ({commit, getters, dispatch}, index) {
       // 初期化
