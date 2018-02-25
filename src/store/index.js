@@ -84,8 +84,6 @@ export default new Vuex.Store({
                 console.log(data)
             if (data.text && data.text.length > 1 && !getters.alreadyWord(data.text)) {
               if (count < showDataNum) {
-                console.log("get")
-                console.log(data)
                 commit('addData', data)
                 commit('addAnswer', {id: data.id, text: data.text, value: false})
               } else {
@@ -118,6 +116,7 @@ export default new Vuex.Store({
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
+        console.log(id)
         axios.post(`/${getters.compType}`, {
           params: {
             id: value
