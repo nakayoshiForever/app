@@ -24,13 +24,14 @@ export default {
 
 .el-header, .el-footer {
   background-color: var(--main-color);
+  background-color: #4E4747;
 }
 
 .el-header {
   padding-left: 10px;
-  color: var(--white-color);
+  color: #FFFFFF;
   line-height: 60px;
-  border-bottom: 4px solid var(--accent-color);
+  border-bottom: 4px solid #CDEF23;
 }
 
 .el-header-logo {
@@ -40,7 +41,7 @@ export default {
 }
 
 .el-main {
-  background-color: var(--contens-color);
+  background-color: #ffffff;
   color: #333;
   padding: 0;
 }
