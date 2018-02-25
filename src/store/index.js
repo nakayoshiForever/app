@@ -37,6 +37,7 @@ export default new Vuex.Store({
     datas: (state) => state.datas,
     dataRemainder: (state) => state.dataRemainder,
     dataRemainderById: (state) => (id) => state.dataRemainder.find(data => data.id === id),
+    dataById: (state) => (id) => state.datas.find(data => data.id === id),
     wordAnswers: (state) => state.wordAnswers,
     wordTrueAnswers: (state) => state.wordAnswers.filter(answer => answer.value === true),
     wordComp: (state) => state.wordComp,
@@ -117,9 +118,11 @@ export default new Vuex.Store({
       console.log(sendValue)
       sendValue.forEach(value => {
         console.log(value)
+        let data = getters.dataById(value)
         axios.post(`/${getters.compType}`, {
           params: {
-            id: value
+            id: data.id,
+            text: data.text,
           }
         })
           .then(res => {
