@@ -4,7 +4,7 @@ import router from '@/router'
 import axiosBase from 'axios'
 
 const mockURL = 'http://localhost:3000';
-const apiURL = '/word';
+const apiURL = 'https://forever-hackchu.mybluemix.net/word';
 const showDataNum = 20
 
 const axios = axiosBase.create({
