@@ -3,7 +3,7 @@
     el-checkbox(v-model="answer" :label="data.text" border @change="updateAnswer()")
 </template>
 <script>
-import {data, _id} from '@/components/modules/wordTab'
+import {data, id} from '@/components/modules/wordTab'
 export default {
   name: 'wordCheckbox',
   data () {
@@ -13,11 +13,11 @@ export default {
   },
   props: {
     data,
-    _id,
+    id,
   },
   methods: {
     updateAnswer () {
-      this.$store.commit('updateAnswer', {_id: this._id, value: this.answer})
+      this.$store.commit('updateAnswer', {id: this.id, value: this.answer})
     }
   }
 }

@@ -1,7 +1,7 @@
 <template lang="pug">
   .word-lists
     .word-list(v-for="data in datas")
-      wordCheckbox(:data="data", :_id="data._id")
+      wordCheckbox(:data="data", :id="data.id")
 </template>
 <script>
 import wordCheckbox from '@/components/modules/wordCheckbox' 

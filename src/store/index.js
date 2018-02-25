@@ -23,7 +23,7 @@ export default new Vuex.Store({
     datas: [],
     /*
       apiから受け取ったデータ:格納例
-      _id:
+      id:
       text: 'きらい'
      * */
     dataRemainder: [],
@@ -36,7 +36,7 @@ export default new Vuex.Store({
   getters: {
     datas: (state) => state.datas,
     dataRemainder: (state) => state.dataRemainder,
-    dataRemainderById: (state) => (_id) => state.dataRemainder.find(data => data._id === _id),
+    dataRemainderById: (state) => (id) => state.dataRemainder.find(data => data.id === id),
     wordAnswers: (state) => state.wordAnswers,
     wordTrueAnswers: (state) => state.wordAnswers.filter(answer => answer.value === true),
     wordComp: (state) => state.wordComp,
@@ -50,9 +50,9 @@ export default new Vuex.Store({
     setAnswer: (state) => {
       state.wordAnwers = []
     },
-    deleteRemainderData: (state, _id) => {
+    deleteRemainderData: (state, id) => {
       let index = state.dataRemainder.find((data, index) => {
-        if (data._id === _id) return index
+        if (data.id === id) return index
       })
       state.dataRemainder.splice(index, 1)
     },
@@ -63,7 +63,7 @@ export default new Vuex.Store({
     },
     addAnswer: (state, answer) => {state.wordAnswers.push(answer)},
     updateAnswer: (state, payload) => {
-      let answer = state.wordAnswers.find(answer => answer._id == payload._id)
+      let answer = state.wordAnswers.find(answer => answer.id == payload.id)
       answer.value = payload.value
     },
     setCompType: (state, index) => {
@@ -83,7 +83,7 @@ export default new Vuex.Store({
             if (data.text && data.text.length > 2 && !getters.alreadyWord(data.text)) {
               if (count < showDataNum) {
                 commit('addData', data)
-                commit('addAnswer', {_id: data._id, text: data.text, value: false})
+                commit('addAnswer', {id: data.id, text: data.text, value: false})
               } else {
                 commit('addDataRemainder', data)
               }
@@ -101,7 +101,7 @@ export default new Vuex.Store({
         if (count < 20) {
           commit('addData', data)
           commit('deleteRemainderData', data)
-          commit('addAnswer', {_id: data._id, text: data.text, value: false})
+          commit('addAnswer', {id: data.id, text: data.text, value: false})
           count ++
         }
       })
@@ -109,14 +109,14 @@ export default new Vuex.Store({
     sendAnswer ({commit, getters, dispatch}) {
       //postするよ
       let sendValue = getters.wordTrueAnswers.map(answer => {
-        return answer._id
+        return answer.id
       })
       //削除するよ
       console.log(sendValue)
       sendValue.forEach(value => {
         axios.post(`/${getters.compType}`, {
           params: {
-            _id: value
+            id: value
           }
         })
           .then(res => {
