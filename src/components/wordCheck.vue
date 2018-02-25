@@ -3,13 +3,9 @@
     .word(slot="main")
       .word-header
         .word-header-tab.ng(@click="changeCompType(1)")
-          .text おこ!
-          .ok-svg
-            img(src="https://forever-hackchu.mybluemix.net/static/svg/1.svg")
+          | おこ!
         .word-header-tab.ok(@click="changeCompType(0)")
-          .text にこ!
-          .ng-svg
-            img(src="https://forever-hackchu.mybluemix.net/static/svg/0.svg")
+          | にこ!
       .word-header-line(:class="compType")
       transition(name="slide-fade" mode="out-in")
         component(:is="wordComp" :datas="datas")
@@ -20,6 +16,9 @@ import Layout from '@/components/layout/default'
 import wordSelect from '@/components/modules/wordSelect'
 import wordNone from '@/components/modules/wordNone'
 import loading from '@/components/modules/loading'
+
+
+
 import store from '@/store/index'
 import {mapActions, mapGetters, mapState} from 'vuex'
 export default {
@@ -47,7 +46,7 @@ export default {
     Layout,
     wordSelect,
     wordNone,
-    loading
+    loading,
   }
 }
 </script>
@@ -79,6 +78,10 @@ export default {
       box-sizing: border-box;
       padding: 10px 0 5px 0;
       text-align: center;
+      font-size: 20px;
+      color: #ffff;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
 }
 .word-header-line {
